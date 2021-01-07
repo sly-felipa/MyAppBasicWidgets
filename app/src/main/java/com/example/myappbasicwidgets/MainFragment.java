@@ -4,14 +4,17 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
 public class MainFragment extends Fragment {
     View view;
-    TextView textViewGame;
-    TextView textViewWidgets;
+//    TextView textViewGame;
+//    TextView textViewWidgets;
+    Button textViewGame;
+    Button textViewWidgets;
 
     private static MainFragment instance = null;
 
