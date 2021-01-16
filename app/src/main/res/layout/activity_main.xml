@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,14 +11,38 @@
         android:layout_height="match_parent">
 
         <fragment
+            android:id="@+id/tvFrag"
+            android:name="com.example.myappbasicwidgets.TextViewFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_text_view" />
+
+        <fragment
+            android:id="@+id/buttonFrag"
+            android:name="com.example.myappbasicwidgets.ButtonFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_button" />
+
+        <fragment
+            android:id="@+id/gameFrag"
+            android:name="com.example.myappbasicwidgets.GameOption"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_game_option" />
+
+        <fragment
+            android:id="@+id/widgetsFrag"
+            android:name="com.example.myappbasicwidgets.WidgetsOption"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_widgets_option" />
+
+        <fragment
             android:id="@+id/mainFrag"
             android:name="com.example.myappbasicwidgets.MainFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             tools:layout="@layout/fragment_main" />
 
     </FrameLayout>
