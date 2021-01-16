@@ -9,6 +9,12 @@
         android:id="@+id/fragmentContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <fragment
+            android:id="@+id/editTFrag"
+            android:name="com.example.myappbasicwidgets.EditTextFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_edit_text" />
 
         <fragment
             android:id="@+id/tvFrag"

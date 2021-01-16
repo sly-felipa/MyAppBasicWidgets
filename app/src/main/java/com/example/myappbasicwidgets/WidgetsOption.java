@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -17,7 +16,7 @@ import androidx.fragment.app.FragmentTransaction;
 public class WidgetsOption extends Fragment {
     ListView listWidgets;
     View view;
-    String[] elements = {"TextView", "Button"};
+    String[] elements = {"TextView", "Button", "ImageButton", "EditText", "CheckBox"};
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -39,13 +38,17 @@ public class WidgetsOption extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 if (elements[position].equals(elements[0])) {
-                    Toast.makeText(getContext().getApplicationContext(), elements[position], Toast.LENGTH_SHORT).show(); //Correcto
                     replaceFragment(new TextViewFragment());
                 } else if (elements[position].equals(elements[1])) {
-//                    Toast.makeText(getContext().getApplicationContext(), elements[position], Toast.LENGTH_SHORT).show(); //Correcto
                     replaceFragment(new ButtonFragment());
+                } else if (elements[position].equals(elements[2])) {
+                    replaceFragment(new FleetingImagesFragment());
+                } else if (elements[position].equals(elements[3])) {
+                    replaceFragment(new EditTextFragment());
+                } else if (elements[position].equals(elements[4])) {
+//                    Toast.makeText(getContext().getApplicationContext(), elements[position], Toast.LENGTH_SHORT).show(); //Correcto
+                    replaceFragment(new EditTextFragment());
                 }
-
             }
         });
         return view;

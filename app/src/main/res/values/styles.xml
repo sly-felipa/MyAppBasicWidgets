@@ -7,4 +7,16 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="EditTextStyleOrange" parent="android:style/Widget.EditText">
+        <item name="android:background">@color/colorOrange</item>
+    </style>
+
+    <style name="EditTextStyleWhite" parent="android:style/Widget.EditText">
+        <item name="android:background">@color/colorWhite</item>
+
+    </style>
+    <style name="EditTextStyleBlack" parent="android:style/Widget.EditText">
+        <item name="android:background">@color/colorBlack</item>
+    </style>
+
 </resources>
