@@ -16,7 +16,7 @@ import androidx.fragment.app.FragmentTransaction;
 public class WidgetsOption extends Fragment {
     ListView listWidgets;
     View view;
-    String[] elements = {"TextView", "Button", "ImageButton", "EditText", "CheckBox"};
+    String[] elements = {"TextView", "Button", "ImageButton", "EditText", "CheckBox","RadioButton","Spinner"};
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -38,16 +38,49 @@ public class WidgetsOption extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 if (elements[position].equals(elements[0])) {
-                    replaceFragment(new TextViewFragment());
+                    try {
+                        replaceFragment(new TextViewFragment());
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                 } else if (elements[position].equals(elements[1])) {
-                    replaceFragment(new ButtonFragment());
+                    try {
+                        replaceFragment(new ButtonFragment());
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                 } else if (elements[position].equals(elements[2])) {
-                    replaceFragment(new FleetingImagesFragment());
+                    try {
+                        replaceFragment(new FleetingImagesFragment());
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                 } else if (elements[position].equals(elements[3])) {
-                    replaceFragment(new EditTextFragment());
+                    try {
+                        replaceFragment(new EditTextFragment());
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                 } else if (elements[position].equals(elements[4])) {
+                    try {
+                        replaceFragment(new CheckBoxFragment());
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                } else if (elements[position].equals(elements[5])) {
 //                    Toast.makeText(getContext().getApplicationContext(), elements[position], Toast.LENGTH_SHORT).show(); //Correcto
-                    replaceFragment(new EditTextFragment());
+                    try {
+                        replaceFragment(new RadioButtonFragment());
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                } else if (elements[position].equals(elements[6])) {
+//                    Toast.makeText(getContext().getApplicationContext(), elements[position], Toast.LENGTH_SHORT).show(); //Correcto
+                    try {
+                        replaceFragment(new SpinnerFragment());
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                 }
             }
         });

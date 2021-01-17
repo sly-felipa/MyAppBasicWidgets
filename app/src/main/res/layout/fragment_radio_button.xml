@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorYellow"
+    android:orientation="vertical"
+    tools:context=".RadioButtonFragment">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Black"
+            android:textSize="24dp" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Orange"
+            android:textColor="@color/colorRed"
+            android:textSize="24dp" />
+
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Green"
+            android:textColor="@color/colorGreen"
+            android:textSize="24dp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewRadio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_margin"
+        android:text="@string/hello_blank_fragment"
+        android:textSize="24dp"
+        android:layout_gravity="center_vertical"
+        android:padding="@dimen/text_margin"
+        android:textAlignment="center"
+        tools:ignore="RtlCompat" />
+
+</LinearLayout>

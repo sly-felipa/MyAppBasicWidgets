@@ -1,8 +1,6 @@
 package com.example.myappbasicwidgets;
 
-import android.media.AudioManager;
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
